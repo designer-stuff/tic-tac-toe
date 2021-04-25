@@ -1,0 +1,39 @@
+.form-group {
+  border-radius: 0.5rem;
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: var(--shadow);
+}
+
+input {
+  width: 100%;
+  padding: 1rem;
+  border: 0;
+  text-align: center;
+}
+
+input,
+input::placeholder {
+  font-family: "Open Sans";
+  font-size: 1.9rem;
+  font-weight: 900;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+.weapon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+
+.weapon strong {
+  font-size: 2rem;
+  font-weight: 900;
+  padding-left: 0.5rem;
+}
