@@ -1,16 +1,18 @@
 import PropTypes from "prop-types";
+// import { Link } from "react-router-dom";
 import "./style/button.css";
 
-function Button({ text }) {
+function Button({ text, onGameStart }) {
   return (
-    <div className="btn">
-      <a href="#">{text}</a>
+    <div className="btn" onClick={onGameStart}>
+      {text}
     </div>
   );
 }
 
 Button.propTypes = {
   text: PropTypes.string,
+  onGameStart: PropTypes.func,
 };
 
 export default Button;
